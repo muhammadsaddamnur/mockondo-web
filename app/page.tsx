@@ -14,6 +14,7 @@ import {
   Github,
   ExternalLink,
   Layers,
+  Send,
 } from 'lucide-react';
 
 const features = [
@@ -72,6 +73,13 @@ const features = [
     iconColor: 'text-yellow-400',
     title: 'Interpolation Custom Data',
     desc: 'Dynamic response data with template interpolation. Use variables like ${faker.name}, ${request.query}, and custom expressions.',
+  },
+  {
+    icon: Send,
+    color: 'from-fuchsia-500 to-pink-500',
+    iconColor: 'text-fuchsia-400',
+    title: 'HTTP & WebSocket Client',
+    desc: 'A built-in alternative to P*stman. Send requests and test your WebSocket connections directly within the app without switching context.',
   },
 ];
 

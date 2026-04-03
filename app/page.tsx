@@ -15,6 +15,7 @@ import {
   ExternalLink,
   Layers,
   Send,
+  Bot,
 } from 'lucide-react';
 
 const features = [
@@ -80,6 +81,13 @@ const features = [
     iconColor: 'text-fuchsia-400',
     title: 'HTTP & WebSocket Client',
     desc: 'A built-in alternative to P*stman. Send requests and test your WebSocket connections directly within the app without switching context.',
+  },
+  {
+    icon: Bot,
+    color: 'from-teal-400 to-cyan-500',
+    iconColor: 'text-teal-300',
+    title: 'AI Agent Integration',
+    desc: 'Describe your API needs in plain language and let the built-in AI agent instantly generate complete mock servers, complex endpoints, and highly realistic data.',
   },
 ];
 

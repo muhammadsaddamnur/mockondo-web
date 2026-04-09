@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npm run:*)",
+      "Bash(kill 7319)",
+      "Bash(curl -s http:// [your-local-IP]:3000)",
+      "Bash(curl -s \"http:// [your-local-IP]:3000/_next/static/chunks/%5Broot-of-the-server%5D__0ge3_qu._.css\")",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(kill 9366)",
+      "Bash(curl -s http:// [your-local-IP]:3001)",
+      "Bash(curl -s http:// [your-local-IP]:3001/docs)",
+      "Bash(npm install:*)"
+    ],
+    "additionalDirectories": [
+      "/Users/muhammadsaddamnur/Documents/development/open_source/mockondo_web/app"
+    ]
+  }
+}

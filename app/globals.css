@@ -76,7 +76,7 @@ body {
 
 /* Gradient text utility */
 .text-gradient {
-  background: linear-gradient(135deg, #818cf8, #a78bfa, #c084fc, #818cf8);
+  background: linear-gradient(135deg, #4fc1ff, #4ec9b0, #89d185, #4fc1ff);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -86,14 +86,14 @@ body {
 
 /* Glassmorphism */
 .glass {
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(30, 30, 30, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .glass-card {
-  background: rgba(15, 23, 42, 0.4);
+  background: rgba(37, 37, 38, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.06);

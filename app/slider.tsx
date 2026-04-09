@@ -27,7 +27,7 @@ export default function Slider() {
   return (
     <div className="w-full pt-10">
   <div className="relative w-full aspect-[5/3] overflow-hidden">
-    <AnimatePresence mode="wait">
+    <AnimatePresence>
       <motion.img
         key={index}
         src={screenshots[index]}

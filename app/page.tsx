@@ -1,14 +1,12 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
-
+import { motion } from 'framer-motion';
 import {
   Server, Radio, HardDrive, FileUp, FileDown,
   WifiOff, Braces, Download, ArrowRight, Github,
   ExternalLink, Layers, Send, Bot,
 } from 'lucide-react';
 import Link from 'next/link';
-import Slider from './slider';
 
 const features = [
   { icon: Server,    title: 'Mock HTTP Server',         desc: 'Define endpoints, status codes, headers, and response bodies with zero backend code.' },
@@ -116,7 +114,24 @@ export default function Page() {
           </motion.div>
 
           {/* Screenshot */}
-          <Slider />
+          <motion.div
+            initial={{ opacity: 0, y: 32 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="mt-20 relative"
+          >
+            <div className="rounded-xl overflow-hidden border border-white/8 shadow-2xl shadow-black/60">
+              <div className="bg-[#1a1a1a] px-4 py-2.5 flex items-center gap-1.5 border-b border-white/6">
+                <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
+                <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
+                <div className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
+                <span className="ml-3 text-xs text-[#555]">Mockondo</span>
+              </div>
+              <img src="/screenshot/mock_http.png" alt="Mockondo app" className="w-full" />
+            </div>
+            {/* subtle glow under screenshot */}
+            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-[#007acc]/10 blur-3xl rounded-full" />
+          </motion.div>
         </section>
 
         {/* Features */}
